@@ -18,6 +18,7 @@ function setup() {
 
 createCanvas(400 ,400);
 angleMode(DEGREES);
+colorMode(HSB);
 background(0);
 
 }
@@ -51,8 +52,8 @@ var r = c * sqrt(n);
 var x = r * cos(phi) + (width/2);
 var y = r * sin(phi) + (height/2);
 
-fill(random(255) , random(255) , random(255));
-// fill((phi) % 256 , 200 , 100);
+//fill(random(255) , random(255) , random(255));
+fill((phi) % 256 , 200 , 100);
 noStroke();
 ellipse(x,y,4,4);
 n++;
